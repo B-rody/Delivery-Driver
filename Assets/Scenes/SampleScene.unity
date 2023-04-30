@@ -1316,7 +1316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197772927}
   - component: {fileID: 197772926}
-  - component: {fileID: 197772925}
+  - component: {fileID: 197772928}
   m_Layer: 0
   m_Name: House 3
   m_TagString: Untagged
@@ -1324,19 +1324,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &197772925
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197772924}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.160003, y: 8.000003, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &197772926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1404,6 +1391,32 @@ Transform:
   m_Father: {fileID: 1496501438}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -111.202}
+--- !u!61 &197772928
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197772924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.16, y: 8}
+    newSize: {x: 8.16, y: 8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.16, y: 8}
+  m_EdgeRadius: 0
 --- !u!1 &211420223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,6 +2128,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2188,6 +2202,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281a41e52cddf3e4e98fbac9fa7fc216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingToFollow: {fileID: 1605501773}
 --- !u!1 &564073676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,7 +2881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 790375920}
   - component: {fileID: 790375919}
-  - component: {fileID: 790375918}
+  - component: {fileID: 790375921}
   m_Layer: 0
   m_Name: House 2
   m_TagString: Untagged
@@ -2862,19 +2889,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &790375918
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790375917}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.560001, y: 9.960001, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &790375919
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2942,6 +2956,32 @@ Transform:
   m_Father: {fileID: 1496501438}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.836}
+--- !u!61 &790375921
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790375917}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.56, y: 9.96}
+    newSize: {x: 7.56, y: 9.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.56, y: 9.96}
+  m_EdgeRadius: 0
 --- !u!1 &790878403
 GameObject:
   m_ObjectHideFlags: 0
